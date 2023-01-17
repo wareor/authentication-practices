@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "8v1Rig/L4PJNeahVaQw0fd/IkBx09OMG7W5EjnLNEbTDe65iPSTRL8xcgicWKEFYlZYjEOCz3xpc8Dm2HKWqmg==",
+  "success": true,
+  "projectFilePath": "C:\\jalefprojects\\authentication-practices\\AuthenticationAsFilter\\AuthenticationAsFilter\\AuthenticationAsFilter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jaech\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.2\\microsoft.aspnetcore.openapi.7.0.2.nupkg.sha512",
+    "C:\\Users\\jaech\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\jaech\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\jaech\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\jaech\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\jaech\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\jaech\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

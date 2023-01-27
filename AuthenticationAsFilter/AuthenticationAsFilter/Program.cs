@@ -32,6 +32,8 @@ builder.Services.AddAuthentication(x =>
 {
     x.RequireHttpsMetadata = true;
     x.SaveToken = true;
+    x.Audience = "https://localhost:7020";
+    x.Authority = "https://localhost:7262";
     x.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuerSigningKey = true,
@@ -46,7 +48,7 @@ builder.Services.AddAuthentication(x =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(option =>
 {
-    option.SwaggerDoc("v1", new OpenApiInfo { Title = "Demo API", Version = "v1" });
+    option.SwaggerDoc("v1", new OpenApiInfo { Title = "Authentication As Filter API", Version = "v1" });
     option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,

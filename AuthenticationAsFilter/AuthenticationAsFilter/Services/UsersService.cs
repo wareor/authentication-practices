@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
-using System.Runtime.CompilerServices;
 using System.Security.Claims;
 using System.Text;
 
@@ -58,8 +57,8 @@ namespace AuthenticationAsFilter.Services
 
             if (user == null)
                 return null;
-
-            var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("4229C87220572990A39DC647"));
+            var sk = Settings.Value.JwtKey;
+            var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Settings.Value.JwtKey));
             var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
             var tokeOptions = new JwtSecurityToken(
                 issuer: "https://localhost:7262",

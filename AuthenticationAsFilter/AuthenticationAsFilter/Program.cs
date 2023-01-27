@@ -22,7 +22,7 @@ builder.Services.AddControllers()
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-byte[] key = Encoding.ASCII.GetBytes("4229C87220572990A39DC647");
+byte[] key = Encoding.ASCII.GetBytes(builder.Configuration.GetSection("AuthenticationAsFilter").GetValue(typeof(string), "JwtKey").ToString());
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

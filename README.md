@@ -1,2 +1,6 @@
 # authentication-practices
 Implementation examples of different patters of authentication architectures
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRAbWFpbC5jb20iLCJuYmYiOjE2NzQxNTM0OTksImV4cCI6MTY3NDE3MTQ5OSwiaWF0IjoxNjc0MTUzNDk5fQ.l5XWaoCXjt-WTvjjV-Iopr4-s0RYTl8ob4S5ifu0mV8
+

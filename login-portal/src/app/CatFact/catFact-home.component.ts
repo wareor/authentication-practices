@@ -5,13 +5,13 @@ import { AuthService, UserSession } from 'src/services/AuthService';
 
 @Component({
   selector: 'app-login-form',
-  templateUrl: './login-form.component.html',
-  styleUrls: ['./login-form.component.scss'],
+  templateUrl: './catFact-home.component.html',
+  styleUrls: ['./catFact-home.component.scss'],
   providers: [
     AuthService
   ]
 })
-export class LoginFormComponent {
+export class CatFactHomeComponent {
   token = "Bearer token value";
   form: FormGroup;
   userSession: UserSession | undefined;
@@ -39,17 +39,6 @@ export class LoginFormComponent {
           }
         );
     }
-
-    
   }
 }
 
-
-
-C# .NET Framework 4.6/DP [Abs. F., Decorator, SP], Dependency injection/SQL Server
-AWS[S3, APIGateway, EC2, Lambda]/Nodejs/ASP.NET/C# .NET Framework 4.6/C# REST API/SQL Server
-AWS[S3, APIGateway, EC2, Lambda, SSQ, SFTP, Secrets]/Nodejs/C# REST API/SQL Server
-ASP.NET/C#/SQL Server.
-Microservice/AWS [Lambda, API Gateway, S3, SFTP, FTP, Identity Provider impl.]/Nodejs/xml-js
-AWS [S3, Secrets, Lambda, API Gateway]
-GIT/Attlassian Software [Jira, Bitbucket, Bamboo, Confluence]/AWS [Code Commit, Code Build]/Team building/SCRUMBAN

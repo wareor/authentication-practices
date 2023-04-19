@@ -1,10 +1,13 @@
 <div id="login-container" class="login-container">
-    <form id="login-form" class="login-form" action="login">
-        <label id="userName-lbl" class="lbl userName-lbl">User:</label>
-        <input id="userName" type="text" name="userName" >
-        <label id="userName-lbl" class="lbl userName-lbl">Password:</label>
-        <input id="password" type="password" name="password" >
-        <input id="login-button" class="login-button" type="button" value="Login">
+    <form id="login-form" class="login-form" action="login" [formGroup]="form">
+        <fieldset>
+            <label id="userName-lbl" class="lbl userName-lbl">User:</label>
+            <input id="userName" type="text" name="userName" formControlName="email">
+            <label id="userName-lbl" class="lbl userName-lbl">Password:</label>
+            <input id="password" type="password" name="password" formControlName="password">
+        </fieldset>
+        <input id="login-button" class="login-button" type="button" value="Login"
+        (click)="login()">
     </form>
     <div id="dev-login-results-container" class="dev-login-results-container">
         <span>{{token}}</span>
